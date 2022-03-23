@@ -1,0 +1,102 @@
+{
+  "name": "按钮",
+  "icon": "el-icon-files",
+  "fields": {
+    "text": {
+      "label": "按钮文字",
+      "type": "string",
+      "value": "按钮"
+    },
+    "btnType": {
+      "label": "按钮类型",
+      "type": "select",
+      "value": "default",
+      "options": [{
+        "label": "默认",
+        "value": "default"
+      },{
+        "label": "危险",
+        "value": "danger"
+      },{
+        "label": "信息",
+        "value": "info"
+      }]
+    },
+    "size": {
+      "label": "按钮大小",
+      "type": "select",
+      "value": "medium",
+      "options": [{
+        "label": "最大",
+        "value": "large"
+      },{
+        "label": "中等",
+        "value": "medium"
+      },{
+        "label": "最小",
+        "value": "mini"
+      }]
+    },
+    "eventName": {
+      "label": "点击事件",
+      "type": "select",
+      "value": "OPENMODAL",
+      "options": [{
+        "label": "弹窗",
+        "value": "OPENMODAL"
+      },{
+        "label": "发送请求",
+        "value": "REQUEST"
+      }]
+    },
+    "options": {
+      "label": "参数",
+      "type": "Object",
+      "value": {},
+      "depend": "eventName",
+      "child": {
+        "OPENMODAL": {
+          "title": {
+            "label": "弹窗标题",
+            "type": "string",
+            "value": ""
+          },
+          "message": {
+            "label": "弹窗主体",
+            "type": "string",
+            "value": ""
+          }
+        },
+        "REQUEST": {
+          "url": {
+            "label": "请求路径",
+            "type": "string",
+            "value": ""
+          },
+          "method": {
+            "label": "请求方法",
+            "type": "select",
+            "value": "get",
+            "options": [{
+              "label": "Get",
+              "value": "get"
+            },{
+              "label": "Post",
+              "value": "post"
+            }]
+          },
+          "reParams": {
+            "label": "请求参数",
+            "type": "string",
+            "value": ""
+          },
+          "headers": {
+            "label": "请求头",
+            "type": "string",
+            "value": ""
+          }
+        }
+      }
+    }
+  }
+}

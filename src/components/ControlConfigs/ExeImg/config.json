@@ -1,0 +1,21 @@
+{
+  "name": "图片",
+  "icon": "el-icon-picture",
+  "fields": {
+    "imagePath": {
+      "label": "图片路径",
+      "type": "string",
+      "value": ""
+    },
+    "radius": {
+      "label": "图片圆角",
+      "type": "number",
+      "value": 0
+    },
+    "size": {
+      "label": "图片百分比",
+      "type": "number",
+      "value": 100
+    }
+  }
+}
