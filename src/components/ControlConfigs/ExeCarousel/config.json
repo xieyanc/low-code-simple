@@ -1,0 +1,132 @@
+{
+  "name": "轮播图",
+
+  "icon": "el-icon-check",
+
+  "fields": {
+    "height": {
+      "label": "高度",
+      "type": "Number",
+      "value": 100
+    },
+    "initial_index": {
+      "label": "初始状态激活的幻灯片的索引",
+      "type": "Number",
+      "value": 2
+    },
+    "trigger": {
+      "label": "指示器的触发方式",
+      "type": "select",
+      "value": "hover",
+      "options": [
+        {
+          "label": "hover",
+          "value": "hover"
+        },
+        {
+          "label": "click",
+          "value": "click"
+        }
+      ]
+    },
+    "autoplay": {
+      "label": "是否自动切换",
+      "type": "select",
+      "value": true,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
+    },
+    "interval": {
+      "label": "自动切换的时间间隔，单位为毫秒",
+      "type": "Number",
+      "value": 3000
+    },
+    "indicator-position": {
+      "label": "指示器的位置",
+      "type": "select",
+      "value": "default",
+      "options": [
+        {
+          "label": "outside",
+          "value": "outside"
+        },
+        {
+          "label": "none",
+          "value": "none"
+        }
+      ]
+    },
+    "arrow": {
+      "label": "切换按钮显示的时机",
+      "type": "select",
+      "value": "hover",
+      "options": [
+        {
+          "label": "鼠标经过",
+          "value": "hover"
+        },
+        {
+          "label": "总是循环",
+          "value": "always"
+        },
+        {
+          "label": "从不",
+          "value": "never"
+        }
+      ]
+    },
+    "type": {
+      "label": "走马灯的类型",
+      "type": "select",
+      "value": "",
+      "options": [
+        {
+          "label": "",
+          "value": ""
+        },
+        {
+          "label": "card",
+          "value": "card"
+        }
+      ]
+    },
+    "loop": {
+      "label": "是否循环显示",
+      "type": "select",
+      "value": true,
+      "options": [
+        {
+          "label": "true",
+          "value": "true"
+        },
+        {
+          "label": "false",
+          "value": "false"
+        }
+      ]
+    },
+    "direction": {
+      "label": "走马灯展示的方向",
+      "type": "select",
+      "value": "horizontal",
+      "options": [
+        {
+          "label": "horizontal",
+          "value": "horizontal"
+        },
+        {
+          "label": "vertical",
+          "value": "vertical"
+        }
+      ]
+    }
+  }
+}

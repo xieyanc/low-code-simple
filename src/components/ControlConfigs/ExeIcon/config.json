@@ -1,0 +1,23 @@
+{
+  "name": "图标",
+
+  "icon": "el-icon-picture-outline-round",
+
+  "fields": {
+    "size": {
+      "label": "图标大小",
+      "type": "Number",
+      "value": 24
+    },
+    "iconClass": {
+      "label": "图标样式",
+      "type": "String",
+      "value": "el-icon-picture-outline-round"
+    },
+    "iconColor": {
+      "label": "图标颜色",
+      "type": "String",
+      "value": "#666"
+    }
+  }
+}

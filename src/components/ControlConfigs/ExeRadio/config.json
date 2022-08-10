@@ -1,0 +1,84 @@
+{
+  "name": "单选框",
+  "icon": "el-icon-open",
+  "fields": {
+    "text1": {
+      "label": "文本1",
+      "type": "string",
+      "value": "123"
+    },
+    "text2": {
+      "label": "文本2",
+      "type": "string",
+      "value": "123"
+    },
+    "label": {
+      "label": "Radio 的 value",
+      "type": "select",
+      "value": "Boolean",
+      "options": [
+        {
+          "label": "Boolean",
+          "value": "Boolean"
+        },
+        {
+          "label": "Number",
+          "value": "Number"
+        },
+        {
+          "label": "String",
+          "value": "String"
+        }
+      ]
+    },
+    "disabled": {
+      "label": "是否禁用",
+      "type": "select",
+      "value": false,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
+    },
+    "border": {
+      "label": "是否显示边框",
+      "type": "select",
+      "value": false,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
+    },
+    "size": {
+      "label": "大小",
+      "type": "select",
+      "value": "medium",
+      "options": [
+        {
+          "label": "大",
+          "value": "medium"
+        },
+        {
+          "label": "中",
+          "value": "small"
+        },
+        {
+          "label": "小",
+          "value": "mini"
+        }
+      ]
+    }
+  }
+}

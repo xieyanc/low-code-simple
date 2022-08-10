@@ -1,34 +1,26 @@
 
 <template>
   <div>
-    <el-button :type="btnType" :size="size" @click="handleClick">{{text}}</el-button>
+    <el-icon :class="iconClass" :style="{ 'font-size': size + 'px', color: iconColor }"></el-icon>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ExeButton",
+  name: "ExeIcon",
 
   props: {
-    text: {
-      type: String,
-      default: "",
-    },
-    btnType: {
-      type: String,
-      default: '',
-    },
     size: {
+      type: Number,
+      default: ''
+    },
+    iconClass: {
       type: String,
       default: ''
     },
-    eventName: {
+    iconColor: {
       type: String,
       default: ''
-    },
-    options: {
-      type: Object,
-      default: () => {}
     }
   },
 
