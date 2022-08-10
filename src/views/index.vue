@@ -1,51 +1,56 @@
 <template>
-  <div class="box">
-    <div class="left">
-      <h4>控件区</h4>
-<!--      group：是否允许内容在数组之间相互拖动-->
-      <draggable
-          v-model="$controlList"
-          :group="{
+  <div>
+    <div class="header">
+      <span class="header-font">Low-code</span>
+    </div>
+    <div class="box">
+      <div class="left">
+        <h4>控件区</h4>
+        <!--      group：是否允许内容在数组之间相互拖动-->
+        <draggable
+            v-model="$controlList"
+            :group="{
             name: 'rendBox',
             pull: 'clone'
           }"
-          :sort="false"
-          :clone="handleClone"
-          animation="300"
-      >
-<!--        组件列表渲染-->
-<!--        $controlList存储的实际上是.json里的属性文件-->
-        <div
-            v-for="(item, index) in $controlList"
-            :key="index"
-            class="control-item"
+            :sort="false"
+            :clone="handleClone"
+            animation="300"
         >
-          <div :class="item.icon"></div>
-          <div>{{ item.name }}</div>
-<!--          <div>{{$controlList}}</div>-->
-        </div>
-      </draggable>
-    </div>
-    <div class="center">
-      <h4>显示区</h4>
-      <draggable
-          class="center-draggable"
-          v-model="cloneList"
-          group="rendBox"
-          :animation="500"
-          :sort="true"
-      >
-        <RenderCenter
-            v-for="(item, index) in cloneList"
-            :itemData="item"
-            :curCompId="curComponent && curComponent.id"
-            :key="item.id"
-            :id="index"
-            @chooseComp="chooseComp"/>
-      </draggable>
-    </div>
-    <div class="right">
-      <RenderRight v-if="curComponent" :curComponent="curComponent"></RenderRight>
+          <!--        组件列表渲染-->
+          <!--        $controlList存储的实际上是.json里的属性文件-->
+          <div
+              v-for="(item, index) in $controlList"
+              :key="index"
+              class="control-item"
+          >
+            <div :class="item.icon"></div>
+            <div>{{ item.name }}</div>
+            <!--          <div>{{$controlList}}</div>-->
+          </div>
+        </draggable>
+      </div>
+      <div class="center">
+        <h4>显示区</h4>
+        <draggable
+            class="center-draggable"
+            v-model="cloneList"
+            group="rendBox"
+            :animation="500"
+            :sort="true"
+        >
+          <RenderCenter
+              v-for="(item, index) in cloneList"
+              :itemData="item"
+              :curCompId="curComponent && curComponent.id"
+              :key="item.id"
+              :id="index"
+              @chooseComp="chooseComp"/>
+        </draggable>
+      </div>
+      <div class="right">
+        <RenderRight v-if="curComponent" :curComponent="curComponent"></RenderRight>
+      </div>
     </div>
   </div>
 </template>
@@ -101,6 +106,17 @@ export default {
 }
 </script>
 <style>
+.header{
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px 18px;
+  background-color: #ffffff;
+}
+.header-font{
+  font-size: 21px;
+  font-weight: 700;
+}
 .box {
   width: 100%;
   height: 100%;
