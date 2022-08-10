@@ -8,7 +8,7 @@
         :border="border"
         :size="size"
         :name="name"
-    >{{ text }}</el-radio>
+    >{{ text1 }}</el-radio>
     <el-radio
         v-model="radio"
         label="2"
@@ -16,7 +16,7 @@
         :border="border"
         :size="size"
         :name="name"
-    >{{ text }}</el-radio>
+    >{{ text2 }}</el-radio>
   </div>
 </template>
 
@@ -29,7 +29,11 @@ export default {
     };
   },
   props: {
-    text: {
+    text1: {
+      type: String,
+      default: '123'
+    },
+    text2: {
       type: String,
       default: '123'
     },
@@ -51,7 +55,7 @@ export default {
     },
     name: {
       type: String,
-      default: '123'
+      default: '单选框'
     }
   }
 }

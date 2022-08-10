@@ -2,30 +2,69 @@
   "name": "单选框",
   "icon": "el-icon-open",
   "fields": {
-    "text": {
-      "label": "文本",
-      "type": "String",
+    "text1": {
+      "label": "文本1",
+      "type": "string",
+      "value": "123"
+    },
+    "text2": {
+      "label": "文本2",
+      "type": "string",
       "value": "123"
     },
     "label": {
-      "label": "Radio的value",
-      "type": "",
-      "value": ""
+      "label": "Radio 的 value",
+      "type": "select",
+      "value": "Boolean",
+      "options": [
+        {
+          "label": "Boolean",
+          "value": "Boolean"
+        },
+        {
+          "label": "Number",
+          "value": "Number"
+        },
+        {
+          "label": "String",
+          "value": "String"
+        }
+      ]
     },
     "disabled": {
       "label": "是否禁用",
-      "type": "Boolean",
-      "value": false
+      "type": "select",
+      "value": false,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
     },
     "border": {
       "label": "是否显示边框",
-      "type": "Boolean",
-      "value": false
+      "type": "select",
+      "value": false,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
     },
     "size": {
-      "label": "Radio 的尺寸",
+      "label": "大小",
       "type": "select",
-      "value": "大",
+      "value": "medium",
       "options": [
         {
           "label": "大",
@@ -40,11 +79,6 @@
           "value": "mini"
         }
       ]
-    },
-    "name": {
-      "label": "原生 name 属性",
-      "type": "String",
-      "value": "123"
     }
   }
 }
