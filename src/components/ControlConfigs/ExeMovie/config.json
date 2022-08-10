@@ -1,0 +1,29 @@
+{
+    "name": "视频",
+    "icon": "el-icon-video-camera-solid",
+    "fields": {
+      "MoviePath": {
+        "label": "视频路径",
+        "type": "string",
+        "value": ""
+      },
+
+      "MovieWidth": {
+        "label": "视频宽度",
+        "type": "number",
+        "value": 800
+      },
+
+      "MovieHeight": {
+        "label": "视频高度",
+        "type": "number",
+        "value": 500
+      },
+      "MoviePoster": {
+        "label": "视频封面",
+        "type": "string",
+        "value": ""
+      }
+
+  }
+}
