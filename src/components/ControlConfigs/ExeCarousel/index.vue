@@ -1,7 +1,6 @@
 <template>
   <div class="block" >
     <el-carousel
-        :style="{'height': height + '%'}"
         :initial_index="initial_index"
         :trigger="trigger"
         :autoplay="autoplay"
@@ -12,8 +11,8 @@
         :loop="loop"
         :direction="direction"
     >
-      <el-carousel-item v-for="item in 4" :key="item" >
-        <h3 class="small">{{ item }}</h3>
+      <el-carousel-item v-for="item in imageUrl" :key="item.id">
+        <img :src="item" />
       </el-carousel-item>
     </el-carousel>
   </div>
@@ -23,8 +22,8 @@
 export default {
   name: "ExeCarousel",
   props: {
-    height: {
-      type: Number,
+    imageUrl: {
+      type: String,
       default: ''
     },
     initial_index: {
@@ -82,5 +81,10 @@ export default {
 
 .el-carousel__item:nth-child(2n+1) {
   background-color: #d3dce6;
+}
+
+img{
+  height: 100%;
+  width: 100%;
 }
 </style>

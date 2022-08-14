@@ -1,9 +1,6 @@
 <template>
   <div class="render-widget" :class="{'active': curCompId === itemData.id}" @click="compClick">
-    <component :is="itemData.component" v-bind="itemData">
-    <slot></slot>
-    </component>
-  
+    <component :is="itemData.component" v-bind="itemData"></component>
   </div>
 </template>
 
@@ -32,7 +29,7 @@ export default {
       this.$emit('chooseComp', this.itemData)
     }
   }
-  
+
 }
 </script>
 <style>
