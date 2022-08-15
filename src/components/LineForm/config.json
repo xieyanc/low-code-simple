@@ -1,0 +1,16 @@
+{
+    "name": "单行表单",
+    "icon": "el-icon-menu",
+    "fields": {
+        "label1": {
+            "label": "选项一",
+            "type": "string",
+            "value": "姓名"
+        },
+        "label2": {
+            "label": "选项二",
+            "type": "string",
+            "value": "年龄"
+        }
+    }
+}
