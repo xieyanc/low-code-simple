@@ -1,0 +1,51 @@
+{
+    "name": "表单",
+    "icon": "el-icon-s-order",
+    "fields": {
+        "name1": {
+            "label": "表单名",
+            "type": "string",
+            "value": "个人资料"
+        },
+      "text1": {
+            "label": "表头一",
+            "type": "string",
+            "value": "姓名"
+        },
+        "text2": {
+            "label": "表头二",
+            "type": "string",
+            "value": "年龄"
+        },
+        "text3": {
+            "label": "表头三",
+            "type": "string",
+            "value": "性别"
+        },
+        "text4": {
+            "label": "表头四",
+            "type": "string",
+            "value": "学历"
+        },
+        "text5": {
+            "label": "表头五",
+            "type": "string",
+            "value": "爱好"
+        },
+        "shown1": {
+            "label": "去除表头",
+            "type": "string",
+            "value": ""
+        },
+        "shown": {
+            "label": "去除一行",
+            "type": "string",
+            "value": ""
+        },
+        "shown2": {
+            "label": "去除两行",
+            "type": "string",
+            "value": ""
+        }
+    }
+}
