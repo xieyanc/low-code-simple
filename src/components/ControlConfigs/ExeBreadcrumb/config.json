@@ -1,0 +1,21 @@
+{
+  "name": "面包屑",
+  "icon": "el-icon-more",
+  "fields": {
+    "sep": {
+      "label": "本人留的备注",
+      "type": "String",
+      "value": "如果要设置icon的话需要把第一个清空"
+    },
+    "separator": {
+      "label": "分隔符",
+      "type": "String",
+      "value": "/"
+    },
+    "separator_class": {
+      "label": "icon",
+      "type": "String",
+      "value": ""
+    }
+  }
+}
