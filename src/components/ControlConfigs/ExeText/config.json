@@ -1,0 +1,11 @@
+{
+  "name": "文本",
+  "icon": "el-icon-edit-outline",
+  "fields": {
+    "font": {
+      "label": "字体",
+      "type": "string",
+      "value": "Helvetica Neue"
+    }
+  }
+}
