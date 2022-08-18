@@ -1,0 +1,28 @@
+{
+  "name": "回到顶部",
+
+  "icon": "el-icon-caret-top",
+
+  "fields": {
+    "target": {
+      "label": "触发滚动的对象",
+      "type": "String",
+      "value": ".page-component__scroll .el-scrollbar__wrap"
+    },
+    "visibility_height": {
+      "label": "滚动高度达到此参数值才出现",
+      "type": "Number",
+      "value": 200
+    },
+    "right": {
+      "label": "控制其显示位置, 距离页面右边距",
+      "type": "Number",
+      "value": 40
+    },
+    "bottom": {
+      "label": "控制其显示位置, 距离页面底部距离",
+      "type": "Number",
+      "value": 40
+    }
+  }
+}

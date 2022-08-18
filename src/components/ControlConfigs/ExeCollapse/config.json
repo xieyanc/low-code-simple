@@ -1,0 +1,26 @@
+{
+  "name": "折叠面板",
+  "icon": "el-icon-document",
+  "fields": {
+    "accordion": {
+      "label": "是否手风琴模式",
+      "type": "select",
+      "value": false,
+      "options": [
+        {
+          "label": "是",
+          "value": true
+        },
+        {
+          "label": "否",
+          "value": false
+        }
+      ]
+    },
+    "disabled": {
+      "label": "禁用对应id的折叠选项",
+      "type": "String",
+      "value": ""
+    }
+  }
+}
