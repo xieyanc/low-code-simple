@@ -8,11 +8,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('@/views/index.vue'),
+    meta:{
+      keepAlive:true
+  }
+  },{
+    path: '/publish',
+    name: 'publish',
+    component: () => import('@/views/publish.vue'),
+    meta:{
+      keepAlive:true
+  }
   }
 ]
 
 const router = new VueRouter({
-  mode: 'hash',
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

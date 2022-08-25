@@ -2,6 +2,9 @@
   <div>
     <div class="header">
       <span class="header-font">Low-code</span>
+      <keep-alive><router-view/><router-link to="/publish">
+      <el-button style="float:right">发布</el-button>
+      </router-link></keep-alive>
     </div>
   <div class="box">
     <div class="left">
@@ -70,7 +73,10 @@
           :itemData="item"
           :curCompId="curComponent && curComponent.id"
           :key="item.id"
-          @chooseComp="chooseComp" />
+          @chooseComp="chooseComp" 
+
+          />
+       
       </draggable>
     </div>
     <div class="right">
@@ -93,7 +99,8 @@ export default {
   },
   data() {
     return {
-      cloneList: [],
+      cloneList:[],
+     
       curComponent: null,
       index:'',
       drawer: false,
@@ -117,9 +124,14 @@ export default {
       const cloneItem = {
         ...deepClone(item),
         id: idGenerate()
+        
       }
        // 将control里的数据存入cloneList中
       this.cloneList.push(cloneItem)
+      console.log(this.cloneList)
+     
+      this.$store.commit("getList",this.cloneList)
+      
       // return cloneItem
     },
      // chooseComp是 RenderCenter.vue 中传递过来的,作用似乎是选中组件?
@@ -141,7 +153,9 @@ export default {
             done();
           })
           .catch(_ => {});
-      }
+      },
+
+
   }
   
 }
@@ -149,7 +163,7 @@ export default {
 <style>
 .header{
   width: 100%;
-  height: 50px;
+  height: 60px;
   box-sizing: border-box;
   padding: 15px 18px;
   background-color: #ffffff;
