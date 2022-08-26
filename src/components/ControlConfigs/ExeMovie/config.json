@@ -11,7 +11,7 @@
       "MovieWidth": {
         "label": "视频宽度",
         "type": "number",
-        "value": 800
+        "value": 600
       },
 
       "MovieHeight": {

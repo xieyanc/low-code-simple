@@ -67,6 +67,8 @@
         group="rendBox"
         :animation="500"
         :sort="true"
+        style="height:470px;overflow-y:scroll"
+
       >
         <RenderCenter
           v-for="item in cloneList"
@@ -74,7 +76,6 @@
           :curCompId="curComponent && curComponent.id"
           :key="item.id"
           @chooseComp="chooseComp" 
-
           />
        
       </draggable>
@@ -161,6 +162,9 @@ export default {
 }
 </script>
 <style>
+.body{
+  height: 470px;
+}
 .header{
   width: 100%;
   height: 60px;

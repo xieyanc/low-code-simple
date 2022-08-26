@@ -11,8 +11,21 @@
     },
     "iconClass": {
       "label": "图标样式",
-      "type": "String",
-      "value": "el-icon-picture-outline-round"
+      "type": "select",
+      "value": "el-icon-picture-outline-round",
+      "options": [{
+        "label": "el-icon-picture-outline-round",
+        "value": "el-icon-picture-outline-round"
+      },{
+        "label": "el-icon-s-tools",
+        "value": "el-icon-s-tools"
+      },{
+        "label": "el-icon-s-goods",
+        "value": "el-icon-s-goods"
+      },{
+        "label": "el-icon-s-comment",
+        "value": "el-icon-s-comment"
+      }]
     },
     "iconColor": {
       "label": "图标颜色",
